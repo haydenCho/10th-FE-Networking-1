@@ -1,0 +1,40 @@
+body {
+  width: 1280px;
+  /* height: 720px; */
+  margin: 0 auto;
+}
+
+#header {
+  border: 2px solid #B01212;
+  width: 930px;
+  height: 29px;
+  margin-top: 58px;
+  margin-bottom: 40px;
+}
+
+#rolling-nav {
+  border: 2px solid #1235B0;
+  width: 930px;
+  height: 49px;
+  margin-bottom: 39px;
+}
+
+#main {
+  width: 930px;
+}
+
+.type-tab-area {
+  border: 2px solid #BB9718;
+  width: 930px;
+  height: 24px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.news-content-area {
+  border: 2px solid #BB6618;
+  width: 930px;
+  height: 388px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}

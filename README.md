@@ -14,7 +14,6 @@
     │  └─images                     # 이미지
     │  └─fonts                      # 폰트
     ├─components                  # 페이지를 구성하는 컴포넌트
-    ├─pages                       # 페이지
     ├─styles                      # CSS 파일 
     └─utils
 ```
