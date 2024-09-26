@@ -1,15 +1,51 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  src: url("../assets/fonts/PretendardVariable.ttf") format("truetype");
+}
+
 body {
   width: 1280px;
   /* height: 720px; */
   margin: 0 auto;
 }
 
+#container{
+  margin: 0 auto;
+}
+
 #header {
-  border: 2px solid #B01212;
   width: 930px;
-  height: 29px;
+  min-height: 29px;
   margin-top: 58px;
   margin-bottom: 40px;
+
+  display: flex;
+}
+
+#header-image-wrap {
+  width: 50%;
+  height: 29px;
+}
+
+#header-image-wrap img {
+  width: 136px;
+}
+
+#header-date-wrap {
+  width: 50%;
+}
+
+#header-date-wrap p {
+  margin: 0 auto;
+  margin-top: 7px;
+  text-align: end;
+
+  color: #5F6E76;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 #rolling-nav {

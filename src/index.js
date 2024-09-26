@@ -1,1 +1,7 @@
-import './styles/index.css';
+import { header } from "./components/header.js";
+
+export function renderHeader() {
+  header();
+};
+
+renderHeader();
