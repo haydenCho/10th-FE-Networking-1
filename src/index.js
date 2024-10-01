@@ -1,7 +1,4 @@
-import { header } from "./components/header.js";
+import { renderHeader } from "./components/header.js";
 
-export function renderHeader() {
-  header();
-};
-
+// 헤더 렌더링
 renderHeader();
