@@ -1,0 +1,49 @@
+#header {
+  width: 930px;
+  min-height: 29px;
+  margin-top: 58px;
+  margin-bottom: 40px;
+
+  display: flex;
+}
+
+#header-image-wrap {
+  width: 50%;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#header-image-wrap img {
+  width: 24px;
+  height: 24px;
+}
+
+#header-image-wrap p {
+  font-family: "Pretendard Variable";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  width: 120px;
+  margin: 0;
+}
+
+#header-date-wrap {
+  width: 50%;
+}
+
+#header-date-wrap p {
+  margin: 0 auto;
+  margin-top: 7px;
+  text-align: end;
+
+  color: #5F6E76;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
