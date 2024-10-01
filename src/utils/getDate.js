@@ -8,7 +8,8 @@ export function getDate() {
 
   const formatedDay = daylist[day];
   const formatedMonth = month.toString().padStart(2, "0");
+  const formatedDate = date.toString().padStart(2, "0");
 
-  const formatedDate = `${year}. ${formatedMonth}. ${date}. ${formatedDay}`;
-  return formatedDate;
+  const totalDate = `${year}. ${formatedMonth}. ${formatedDate}. ${formatedDay}`;
+  return totalDate;
 };
