@@ -1,0 +1,87 @@
+#rolling-section {
+  width: 930px;
+  height: 49px;
+  margin-top: 40px;
+  margin-bottom: 39px;
+  display: flex;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+#rolling-bar-1, #rolling-bar-2 {
+  border: 2px solid black;
+  width: 461px;
+  height: 17px;
+  margin: 0 auto;
+  padding: 16px;
+
+  position: relative;
+  overflow: hidden;
+
+  border: 1px solid #D2DAE0;
+  background: #F5F7F9;
+
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.rolling-item {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex: 1 0 0;
+  margin: 10px 0 10px 0;
+
+  position: absolute;
+  top: -50px;
+}
+
+.rolling-item.prev {
+  top: 50px;
+  transition: top 0.5s ease;
+}
+
+.rolling-item.current {
+  top: 6px;
+  transition: top 0.5s ease;
+}
+
+.rolling-item.next {
+  top: -50px;
+}
+
+.press {
+  height: 17px;
+  width: 49px;
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title {
+  height: 17px;
+  width: 364px;
+}
+
+.title a {
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient:vertical;
+  overflow: hidden;
+}
