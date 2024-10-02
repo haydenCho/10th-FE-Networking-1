@@ -37,11 +37,11 @@
   margin: 10px 0 10px 0;
 
   position: absolute;
-  top: -50px;
+  top: 50px;
 }
 
 .rolling-item.prev {
-  top: 50px;
+  top: -50px;
   transition: top 0.5s ease;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .rolling-item.next {
-  top: -50px;
+  top: 50px;
 }
 
 .press {
@@ -84,4 +84,8 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient:vertical;
   overflow: hidden;
+}
+
+.title a:hover {
+  text-decoration: underline;
 }

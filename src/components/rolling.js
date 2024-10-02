@@ -46,6 +46,7 @@ export function renderRolling() {
     let currentIndex = 0;
     let nextIndex = 1;
     let prevIndex = length-1;
+    let rollingTime;
 
     // 첫 번째 아이템부터 보여주기(상태 초기화)
     rollingItems[currentIndex].classList.add("current");
@@ -72,6 +73,24 @@ export function renderRolling() {
       rollingItems[nextIndex].classList.add("next");
     }
 
-    setInterval(rollingItem, 5000);
+    // 롤링 시작
+    function startRolling() {
+      rollingTime = setInterval(rollingItem, 5000);
+    }
+
+    // 롤링 멈춤
+    function stopRolling() {
+      clearInterval(rollingTime);
+    }
+
+    // 각각의 기사 타이틀에 마우스 오버 시 롤링을 멈춤, 아웃 시 롤링 재개
+    rollingItems.forEach(item => {
+      const newsLink = item.querySelector('.title a');
+      newsLink.addEventListener('mouseover', stopRolling);
+      newsLink.addEventListener('mouseout', startRolling);
+    });
+
+    // 페이지 로딩시 초기 롤링
+    startRolling();
   }
 }
