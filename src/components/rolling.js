@@ -38,8 +38,9 @@ export function renderRolling() {
     )
     .join("");
 
-  createRolling(rollingBarFirst, data.rollingBar_1.length)
-  createRolling(rollingBarSecond, data.rollingBar_2.length)
+  createRolling(rollingBarFirst, data.rollingBar_1.length);
+  setTimeout(createRolling, 1000, rollingBarSecond, data.rollingBar_2.length);
+
 
   function createRolling(rollingBar, length) {
     const rollingItems = rollingBar.querySelectorAll(".rolling-item");
