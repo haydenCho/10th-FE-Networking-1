@@ -6,9 +6,11 @@ export function createRolling(rollingBar, length) {
   let rollingTime;
 
   // 첫 번째 아이템부터 보여주기(상태 초기화)
-  rollingItems[currentIndex].classList.add("current");
-  rollingItems[nextIndex].classList.add("next");
-  rollingItems[prevIndex].classList.add("prev");
+  function initRollingItem() {
+    rollingItems[currentIndex].classList.add("current");
+    rollingItems[nextIndex].classList.add("next");
+    rollingItems[prevIndex].classList.add("prev");
+  }
 
   // 아이템 롤링 함수(classList 상태 변화)
   function rollingItem() {
@@ -48,5 +50,6 @@ export function createRolling(rollingBar, length) {
   });
 
   // 페이지 로딩시 초기 롤링
+  initRollingItem();
   startRolling();
 }
