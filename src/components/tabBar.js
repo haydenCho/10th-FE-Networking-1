@@ -2,6 +2,7 @@ import renderAllGrid from "./contents/allGrid.js";
 import renderAllList from "./contents/allList.js";
 import renderSubscribedGrid from "./contents/subscribedGrid.js";
 import renderSubscribedList from "./contents/subscibedList.js";
+import { TAB_VIEW_CONSTANTS } from "../utils/constants.js";
 
 let selectedType = "all";
 let selectedView = "list";
@@ -11,15 +12,15 @@ export function renderTabBar() {
   
   typeTabArea.innerHTML = `
     <div class="type-selector">
-      <button class="type-btn" data-type="all">전체 언론사</button>
+      <button class="type-btn active" data-type="all">전체 언론사</button>
       <button class="type-btn" data-type="subscribed">내가 구독한 언론사</button>
     </div>
     <div class="view-selector">
-      <button class="view-btn" data-view="list">
-        <i class="list-icon"></i>
+      <button class="view-btn active" data-view="list">
+        <img src="${TAB_VIEW_CONSTANTS.LIST_ICON}" alt="${TAB_VIEW_CONSTANTS.LIST_ALT}" class="view-icon">
       </button>
       <button class="view-btn" data-view="grid">
-        <i class="grid-icon"></i>
+        <img src="${TAB_VIEW_CONSTANTS.GRID_ICON}" alt="${TAB_VIEW_CONSTANTS.GRID_ALT}" class="view-icon">
       </button>
     </div>
   `;

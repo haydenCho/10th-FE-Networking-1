@@ -1,0 +1,33 @@
+.type-tab-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.type-tab-area button {
+  padding: 0;
+  border: none;
+  background-color: white;
+  font-family: "Pretendard Variable";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.type-selector {
+  width: 216px;
+  height: 22px;
+  display: flex;
+  gap: 24px;
+}
+
+.view-btn {
+  height: 24px;
+}
+
+/* 활성화된 버튼 CSS */
+.type-btn.active {
+  font-weight: bold;
+}
+
+.view-btn.active img {
+  filter: invert(41%) sepia(30%) saturate(1969%) hue-rotate(197deg) brightness(86%) contrast(92%);
+}
