@@ -1,5 +1,6 @@
 @import './header.css';
 @import './rolling.css';
+@import './tabBar.css';
 
 @font-face {
   font-family: "Pretendard Variable";
