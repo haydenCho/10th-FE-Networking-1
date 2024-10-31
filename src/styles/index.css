@@ -1,6 +1,7 @@
 @import './header.css';
 @import './rolling.css';
 @import './tabBar.css';
+@import './contents/allList.css';
 
 @font-face {
   font-family: "Pretendard Variable";
@@ -29,7 +30,6 @@ body {
 }
 
 .news-content-area {
-  border: 2px solid #BB6618;
   width: 930px;
   height: 388px;
   margin: 0 auto;
