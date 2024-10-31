@@ -2,6 +2,7 @@
 @import './rolling.css';
 @import './tabBar.css';
 @import './contents/allList.css';
+@import './listCategory.css';
 
 @font-face {
   font-family: "Pretendard Variable";
@@ -34,4 +35,5 @@ body {
   height: 388px;
   margin: 0 auto;
   margin-bottom: 24px;
+  border: 1px solid #D2DAE0;
 }

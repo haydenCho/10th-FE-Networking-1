@@ -1,7 +1,9 @@
+import { renderListCategory } from "../listCategory.js";
+
 export default function renderAllList() {
   const typeTabArea = document.querySelector('.news-content-area');
   typeTabArea.innerHTML = `
-    <section class="news-category-area">카테고리바</section>
+    <section class="news-category-area"></section>
     <section class="news-content-container">
       <section class="news-content-header">
         <div class="news-content-logo">신문사 로고</div>
@@ -20,4 +22,7 @@ export default function renderAllList() {
       </section>
     </section>
   `;
+
+  const categoryArea = document.querySelector('.news-category-area');
+  categoryArea.innerHTML = renderListCategory();
 };
