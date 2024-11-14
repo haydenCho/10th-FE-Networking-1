@@ -3,6 +3,7 @@
 @import './tabBar.css';
 @import './contents/allList.css';
 @import './listCategory.css';
+@import './subscribeButton.css';
 
 @font-face {
   font-family: "Pretendard Variable";

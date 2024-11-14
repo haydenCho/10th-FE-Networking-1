@@ -1,4 +1,5 @@
 import { renderListCategory } from "../listCategory.js";
+import createSubscribeButton from "../subscribeButton.js";
 
 export default async function renderAllList() {
   // 데이터 불러오기(경로 주의)
@@ -12,7 +13,7 @@ export default async function renderAllList() {
       <section class="news-content-header">
         <img src=${newsContentData.press_image_url} alt="${newsContentData.press} 로고">
         <div class="news-content-editAt">${newsContentData.date}</div>
-        <div class="news-content-subscribeBtn">구독하기 버튼</div>
+        <div class="news-content-subscribeBtn"></div>
       </section>
       <section class="news-content">
         <section class="left-content">
@@ -30,6 +31,11 @@ export default async function renderAllList() {
       </section>
     </section>
   `;
+
+  // 구독하기 버튼 추가
+  const subscribeContainer = typeTabArea.querySelector('.news-content-subscribeBtn');
+  const subscribeButton = createSubscribeButton();
+  subscribeContainer.appendChild(subscribeButton);
 
   // 카테고리바 렌더링
   renderListCategory();
