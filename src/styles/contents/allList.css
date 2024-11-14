@@ -78,3 +78,12 @@
   color: #879298;
   margin-top: 16px;
 }
+
+.news_link {
+  color: black;
+  text-decoration: none;
+}
+
+.news_link:hover {
+  text-decoration: underline;
+}

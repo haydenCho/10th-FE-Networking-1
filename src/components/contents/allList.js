@@ -20,11 +20,13 @@ export default async function renderAllList() {
           <div class="main-news-image">
             <img src=${newsContentData.news_image_url} alt="메인 뉴스 이미지">
           </div>
-          <div class="main-news-title">${newsContentData.title}</div>
+          <div class="main-news-title"><a href="${newsContentData.title_link}" class="news_link">${newsContentData.title}</a></div>
         </section>
         <section class="right-content">
           <div class="sub-news-title">
-            ${newsContentData.articles.map((article) => `<div class="sub-news-title-item">${article}</div>`).join('')}
+            ${newsContentData.articles.map((article) => `
+              <div class="sub-news-title-item"><a href="${article.link}" class="news_link">${article.title}</a></div>
+              `).join('')}
           </div>
           <div class="edit-script">${newsContentData.press} 언론사에서 직접 편집한 뉴스입니다.</div>
         </section>
