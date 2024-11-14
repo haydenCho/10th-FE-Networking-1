@@ -1,7 +1,3 @@
-.category-bar {
-  display: flex;
-}
-
 .category-menu {
   font-family: "Pretendard Variable";
   font-weight: bold;
@@ -9,14 +5,18 @@
   color: #879298;
 
   padding: 11.5px 16px;
-
-  display: flex;
-  gap: 40px;
+  cursor: pointer;
+  position: relative;
 }
 
 .category-menu.active {
-  background-color: #7890E7;
   color: #FFFFFF;
+  background-color: #7890E7;
+  position: relative;
+  width: 166px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .category-menu .category-count-area {
@@ -25,6 +25,8 @@
 
 .category-menu.active .category-count-area {
   display: flex;
+  margin-left: auto;
+  z-index: 100;
 }
 
 .category-menu.active .category-count {
@@ -34,4 +36,38 @@
 
 .category-menu.active .category-current-count {
   display: inline-flex;
+}
+
+.category-menu.active .category-name {
+  z-index: 100;
+}
+
+.category-menu.hover .category-name {
+  text-decoration: underline;
+}
+
+.category-menu.active .progressbar-guage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 40px;
+  background-color: #4362D0;
+  animation-name: category-progressbar;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes category-progressbar {
+  0% {
+    width: 0;
+    opacity: 1;
+    z-index: 10;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    z-index: 10;
+  }
 }

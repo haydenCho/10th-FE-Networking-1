@@ -23,6 +23,6 @@ export default function renderAllList() {
     </section>
   `;
 
-  const categoryArea = document.querySelector('.news-category-area');
-  categoryArea.innerHTML = renderListCategory();
+  // 카테고리바 렌더링
+  renderListCategory();
 };

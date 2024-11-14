@@ -8,6 +8,7 @@
   height: 40px;
   border-bottom: 1px solid #D2DAE0;
   background-color: #F5F7F9;
+  display: flex;
 }
 
 .news-content-container {
